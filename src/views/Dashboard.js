@@ -1,25 +1,5 @@
-/*!
-
-=========================================================
-* Paper Dashboard React - v1.3.2
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/paper-dashboard-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-
-* Licensed under MIT (https://github.com/creativetimofficial/paper-dashboard-react/blob/main/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
-// react plugin used to create charts
 import { Line, Pie } from "react-chartjs-2";
-// reactstrap components
 import {
   Card,
   CardHeader,
@@ -41,7 +21,7 @@ function Dashboard() {
     <>
       <div className="content">
         <Row>
-          <Col lg="3" md="6" sm="6">
+           <Col lg="3" md="6" sm="6">
             <Card className="card-stats">
               <CardBody>
                 <Row>
@@ -52,8 +32,8 @@ function Dashboard() {
                   </Col>
                   <Col md="8" xs="7">
                     <div className="numbers">
-                      <p className="card-category">Capacity</p>
-                      <CardTitle tag="p">150GB</CardTitle>
+                      <p className="card-category"> Promoter Score</p>
+                      <CardTitle tag="p">92%</CardTitle>
                       <p />
                     </div>
                   </Col>
@@ -62,12 +42,12 @@ function Dashboard() {
               <CardFooter>
                 <hr />
                 <div className="stats">
-                  <i className="fas fa-sync-alt" /> Update Now
+                  <i className="fas fa-sync-alt" /> Refresh
                 </div>
               </CardFooter>
             </Card>
-          </Col>
-          <Col lg="3" md="6" sm="6">
+          </Col> 
+           <Col lg="3" md="6" sm="6">
             <Card className="card-stats">
               <CardBody>
                 <Row>
@@ -79,7 +59,7 @@ function Dashboard() {
                   <Col md="8" xs="7">
                     <div className="numbers">
                       <p className="card-category">Revenue</p>
-                      <CardTitle tag="p">$ 1,345</CardTitle>
+                      <CardTitle tag="p">₹ 7,60,000</CardTitle>
                       <p />
                     </div>
                   </Col>
@@ -104,8 +84,8 @@ function Dashboard() {
                   </Col>
                   <Col md="8" xs="7">
                     <div className="numbers">
-                      <p className="card-category">Errors</p>
-                      <CardTitle tag="p">23</CardTitle>
+                      <p className="card-category">Misplaces</p>
+                      <CardTitle tag="p">16</CardTitle>
                       <p />
                     </div>
                   </Col>
@@ -114,7 +94,7 @@ function Dashboard() {
               <CardFooter>
                 <hr />
                 <div className="stats">
-                  <i className="far fa-clock" /> In the last hour
+                  <i className="far fa-clock" /> In the last month
                 </div>
               </CardFooter>
             </Card>
@@ -130,8 +110,8 @@ function Dashboard() {
                   </Col>
                   <Col md="8" xs="7">
                     <div className="numbers">
-                      <p className="card-category">Followers</p>
-                      <CardTitle tag="p">+45K</CardTitle>
+                      <p className="card-category">Entries</p>
+                      <CardTitle tag="p">+45k</CardTitle>
                       <p />
                     </div>
                   </Col>
@@ -140,18 +120,18 @@ function Dashboard() {
               <CardFooter>
                 <hr />
                 <div className="stats">
-                  <i className="fas fa-sync-alt" /> Update now
+                  <i className="fas fa-sync-alt" /> Refresh
                 </div>
               </CardFooter>
             </Card>
           </Col>
         </Row>
-        <Row>
-          <Col md="12">
+        <Row> 
+           <Col md="12">
             <Card>
               <CardHeader>
-                <CardTitle tag="h5">Users Behavior</CardTitle>
-                <p className="card-category">24 Hours performance</p>
+                <CardTitle tag="h5">Customer Retention Rates</CardTitle>
+                <p className="card-category">365 days</p>
               </CardHeader>
               <CardBody>
                 <Line
@@ -170,11 +150,11 @@ function Dashboard() {
             </Card>
           </Col>
         </Row>
-        <Row>
-          <Col md="4">
+        <Row> 
+           <Col md="4">
             <Card>
               <CardHeader>
-                <CardTitle tag="h5">Email Statistics</CardTitle>
+                <CardTitle tag="h5">Customer Email Statistics</CardTitle>
                 <p className="card-category">Last Campaign Performance</p>
               </CardHeader>
               <CardBody style={{ height: "266px" }}>
@@ -185,8 +165,8 @@ function Dashboard() {
               </CardBody>
               <CardFooter>
                 <div className="legend">
-                  <i className="fa fa-circle text-primary" /> Opened{" "}
-                  <i className="fa fa-circle text-warning" /> Read{" "}
+                  <i className="fa fa-circle text-primary" /> Opened {"  "}
+                  <i className="fa fa-circle text-warning" /> Read {"  "}
                   <i className="fa fa-circle text-danger" /> Deleted{" "}
                   <i className="fa fa-circle text-gray" /> Unopened
                 </div>
@@ -196,12 +176,12 @@ function Dashboard() {
                 </div>
               </CardFooter>
             </Card>
-          </Col>
+          </Col> 
           <Col md="8">
             <Card className="card-chart">
               <CardHeader>
-                <CardTitle tag="h5">NASDAQ: AAPL</CardTitle>
-                <p className="card-category">Line Chart with Points</p>
+                <CardTitle tag="h5">Top Selling Models</CardTitle>
+                <p className="card-category">Line Chart </p>
               </CardHeader>
               <CardBody>
                 <Line
@@ -213,13 +193,11 @@ function Dashboard() {
               </CardBody>
               <CardFooter>
                 <div className="chart-legend">
-                  <i className="fa fa-circle text-info" /> Tesla Model S{" "}
-                  <i className="fa fa-circle text-warning" /> BMW 5 Series
+                  <i className="fa fa-circle text-info" /> Sedan{" "}
+                  <i className="fa fa-circle text-warning" /> SUV
                 </div>
                 <hr />
-                <div className="card-stats">
-                  <i className="fa fa-check" /> Data information certified
-                </div>
+                
               </CardFooter>
             </Card>
           </Col>
@@ -229,4 +207,4 @@ function Dashboard() {
   );
 }
 
-export default Dashboard;
+export default Dashboard;
